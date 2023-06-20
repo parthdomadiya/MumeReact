@@ -9,6 +9,17 @@ import { Colors } from '../theme/color';
 import Splash from '../screens/Splash';
 import Introduction from '../screens/Introduction';
 import ArtistDetail from '../screens/ArtistDetail';
+import Home from '../screens/Home';
+import PlaySong from '../screens/PlaySong';
+import AlubmDetail from '../screens/AlubmDetail';
+import FolderDetail from '../screens/FolderDetail';
+import RecentPlay from '../screens/RecentPlay';
+import Search from '../screens/Search';
+import SearchResult from '../screens/SearchResult';
+import Favorites from '../screens/Favorites';
+import Playlist from '../screens/Playlist';
+import PlaylistDetail from '../screens/PlaylistDetail';
+import Add from '../screens/Add';
 
 const Stack = createNativeStackNavigator();
 
@@ -51,6 +62,50 @@ export default function StackNavigator() {
                         name="Introduction"
                         component={Introduction}
                         options={{ headerShown: false }} /> */}
+                    {/* <Stack.Screen
+                        name="Home"
+                        component={Home}
+                        options={{ headerShown: false }} /> */}
+                    <Stack.Screen
+                        name="Playlist"
+                        component={Playlist}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="Add"
+                        component={Add}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="PlaylistDetail"
+                        component={PlaylistDetail}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="Favorites"
+                        component={Favorites}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="SearchResult"
+                        component={SearchResult}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="Search"
+                        component={Search}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="RecentPlay"
+                        component={RecentPlay}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="FolderDetail"
+                        component={FolderDetail}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="AlubmDetail"
+                        component={AlubmDetail}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="PlaySong"
+                        component={PlaySong}
+                        options={{ headerShown: false }} />
                     <Stack.Screen
                         name="ArtistDetail"
                         component={ArtistDetail}

@@ -13,7 +13,7 @@ export default StyleSheet.create({
         marginHorizontal: 20
     },
     title: {
-        fontSize: 28,
+        fontSize: 30,
         color: Colors.active,
         fontFamily: 'Urbanist-Bold'
     },
