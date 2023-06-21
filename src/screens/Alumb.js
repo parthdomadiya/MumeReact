@@ -19,7 +19,7 @@ export default function Alumb() {
     const navigation = useNavigation();
     return (
         <SafeAreaView style={[style.area, { backgroundColor: theme.bg, }]}>
-            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{height:Platform.OS === 'ios' ? height : height*1.01}}>
+            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{height:Platform.OS === 'ios' ? height*1.07 : height*1.01}}>
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 20 }}>
                     <Text style={[style.subtitle, { color: theme.txt, }]}>68 albums</Text>
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center' }}>

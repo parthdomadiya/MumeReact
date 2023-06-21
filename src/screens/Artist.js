@@ -19,7 +19,7 @@ export default function Artist() {
     const navigation = useNavigation();
     return (
         <SafeAreaView style={[style.area, { backgroundColor: theme.bg, }]}>
-            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{height:Platform.OS === 'ios' ? height : height/1.07}}>
+            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{height:Platform.OS === 'ios' ? height*1.1 : height/1.07}}>
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 20 }}>
                     <Text style={[style.subtitle, { color: theme.txt, }]}>85 artists</Text>
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -92,50 +92,50 @@ export default function Artist() {
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                     <Avatar.Image source={require('../../assets/image/s9.png')} size={70} style={{ backgroundColor: theme.bg }} />
-                    <View style={{ marginLeft: 10, flex: 1 }}>
+                    <TouchableOpacity onPress={() => this.RBSheet2.open()} style={{ marginLeft: 10, flex: 1 }}>
                         <Text style={[style.b18, { color: theme.txt }]}>The Weeknd</Text>
                         <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>1 Album  |  16 Songs</Text>
-                    </View>
+                    </TouchableOpacity>
                     <Icons name='dots-vertical' size={20} color={theme.txt} />
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                     <Avatar.Image source={require('../../assets/image/s10.png')} size={70} style={{ backgroundColor: theme.bg }} />
-                    <View style={{ marginLeft: 10, flex: 1 }}>
+                    <TouchableOpacity onPress={() => this.RBSheet2.open()} style={{ marginLeft: 10, flex: 1 }}>
                         <Text style={[style.b18, { color: theme.txt }]}>Acidrap</Text>
                         <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>2 Album  |  28 Songs</Text>
-                    </View>
+                    </TouchableOpacity>
                     <Icons name='dots-vertical' size={20} color={theme.txt} />
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                     <Avatar.Image source={require('../../assets/image/s20.png')} size={70} style={{ backgroundColor: theme.bg }} />
-                    <View style={{ marginLeft: 10, flex: 1 }}>
+                    <TouchableOpacity onPress={() => this.RBSheet2.open()} style={{ marginLeft: 10, flex: 1 }}>
                         <Text style={[style.b18, { color: theme.txt }]}>Ania Szarmarch</Text>
                         <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>1 Album  |  12 Songs</Text>
-                    </View>
+                    </TouchableOpacity>
                     <Icons name='dots-vertical' size={20} color={theme.txt} />
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                     <Avatar.Image source={require('../../assets/image/s21.png')} size={70} style={{ backgroundColor: theme.bg }} />
-                    <View style={{ marginLeft: 10, flex: 1 }}>
+                    <TouchableOpacity style={{ marginLeft: 10, flex: 1 }}>
                         <Text style={[style.b18, { color: theme.txt }]}>Troye Sivan</Text>
                         <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>1 Album  |  14 Songs</Text>
-                    </View>
+                    </TouchableOpacity>
                     <Icons name='dots-vertical' size={20} color={theme.txt} />
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                     <Avatar.Image source={require('../../assets/image/s22.png')} size={70} style={{ backgroundColor: theme.bg }} />
-                    <View style={{ marginLeft: 10, flex: 1 }}>
+                    <TouchableOpacity onPress={() => this.RBSheet2.open()} style={{ marginLeft: 10, flex: 1 }}>
                         <Text style={[style.b18, { color: theme.txt }]}>Ryan Jones</Text>
                         <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>2 Album  |  24 Songs</Text>
-                    </View>
+                    </TouchableOpacity>
                     <Icons name='dots-vertical' size={20} color={theme.txt} />
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15, marginBottom: 20 }}>
                     <Avatar.Image source={require('../../assets/image/s23.png')} size={70} style={{ backgroundColor: theme.bg }} />
-                    <View style={{ marginLeft: 10, flex: 1 }}>
+                    <TouchableOpacity onPress={() => this.RBSheet2.open()} style={{ marginLeft: 10, flex: 1 }}>
                         <Text style={[style.b18, { color: theme.txt }]}>Sweet Sexy Savage</Text>
                         <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>1 Album  |  16 Songs</Text>
-                    </View>
+                    </TouchableOpacity>
                     <Icons name='dots-vertical' size={20} color={theme.txt} />
                 </View>
             </ScrollView>

@@ -23,10 +23,9 @@ const Top1 = () => {
 
     return <Tab.Navigator
         screenOptions={{
-            tabBarStyle: { flexDirection: 'row', },
+            tabBarStyle: { flexDirection: 'row',backgroundColor:theme.bg },
             tabBarLabelStyle: {
                 fontSize: 18,
-                backgroundColor: theme.bg,
                 // paddingVertical: 5,
                 marginHorizontal: 20
             },
@@ -78,16 +77,14 @@ const Top1 = () => {
                 headerShown: false,
             }}
         />
-
-
-
-    </Tab.Navigator>
+</Tab.Navigator>
 }
 
 const Recent = () => {
     const theme = useContext(themeContext);
     const navigation = useNavigation();
-    return <ScrollView showsVerticalScrollIndicator={false}>
+    return <SafeAreaView style={{backgroundColor:theme.bg}}>
+    <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
             <Image source={require('../../assets/image/s59.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />
             <View style={{ marginLeft: 10, flex: 1 }}>
@@ -197,6 +194,7 @@ const Recent = () => {
             </TouchableOpacity>
         </View>
     </ScrollView>
+    </SafeAreaView>
 }
 
 export default function Add() {

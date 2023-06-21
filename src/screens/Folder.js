@@ -19,7 +19,7 @@ export default function Folder() {
     const navigation = useNavigation();
     return (
         <SafeAreaView style={[style.area, { backgroundColor: theme.bg, }]}>
-            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{height:Platform.OS === 'ios' ? height : height/1.2}}>
+            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{height:Platform.OS === 'ios' ? height/1.1 : height/1.2}}>
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 20 }}>
                     <Text style={[style.subtitle, { color: theme.txt, }]}>40 folders</Text>
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center' }}>

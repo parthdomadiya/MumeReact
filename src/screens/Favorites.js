@@ -145,10 +145,10 @@ export default function Favorites() {
                     </View>
                     <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                         <Image source={require('../../assets/image/s14.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />
-                        <View style={{ marginLeft: 10, flex: 1 }}>
+                        <TouchableOpacity onPress={() => this.RBSheet3.open()} style={{ marginLeft: 10, flex: 1 }}>
                             <Text style={[style.b18, { color: theme.txt }]}>Starboy</Text>
                             <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>The Weeknd, Daft Punk</Text>
-                        </View>
+                        </TouchableOpacity>
                         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                             <Avatar.Image source={require('../../assets/image/Play.png')} size={32} style={{ backgroundColor: theme.bg }} />
                             <Icons name='dots-vertical' size={20} color={theme.txt} style={{ marginLeft: 8 }} />
@@ -156,10 +156,10 @@ export default function Favorites() {
                     </View>
                     <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                         <Image source={require('../../assets/image/s50.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />
-                        <View style={{ marginLeft: 10, flex: 1 }}>
+                        <TouchableOpacity onPress={() => this.RBSheet3.open()} style={{ marginLeft: 10, flex: 1 }}>
                             <Text style={[style.b18, { color: theme.txt }]}>Starboy Speed Up</Text>
                             <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>Just Lowkey</Text>
-                        </View>
+                        </TouchableOpacity>
                         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                             <Avatar.Image source={require('../../assets/image/Play.png')} size={32} style={{ backgroundColor: theme.bg }} />
                             <Icons name='dots-vertical' size={20} color={theme.txt} style={{ marginLeft: 8 }} />
@@ -167,10 +167,10 @@ export default function Favorites() {
                     </View>
                     <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                         <Image source={require('../../assets/image/s37.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />
-                        <View style={{ marginLeft: 10, flex: 1 }}>
+                        <TouchableOpacity onPress={() => this.RBSheet3.open()} style={{ marginLeft: 10, flex: 1 }}>
                             <Text style={[style.b18, { color: theme.txt }]}>Blinding Lights</Text>
                             <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>The Weeknd</Text>
-                        </View>
+                        </TouchableOpacity>
                         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                             <Avatar.Image source={require('../../assets/image/Play.png')} size={32} style={{ backgroundColor: theme.bg }} />
                             <Icons name='dots-vertical' size={20} color={theme.txt} style={{ marginLeft: 8 }} />
@@ -178,10 +178,10 @@ export default function Favorites() {
                     </View>
                     <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                         <Image source={require('../../assets/image/s51.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />
-                        <View style={{ marginLeft: 10, flex: 1 }}>
+                        <TouchableOpacity onPress={() => this.RBSheet3.open()} style={{ marginLeft: 10, flex: 1 }}>
                             <Text style={[style.b18, { color: theme.txt }]}>The Hills</Text>
                             <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>The Weeknd</Text>
-                        </View>
+                        </TouchableOpacity>
                         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                             <Avatar.Image source={require('../../assets/image/Play.png')} size={32} style={{ backgroundColor: theme.bg }} />
                             <Icons name='dots-vertical' size={20} color={theme.txt} style={{ marginLeft: 8 }} />
@@ -189,10 +189,10 @@ export default function Favorites() {
                     </View>
                     <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15, marginBottom: 20 }}>
                         <Image source={require('../../assets/image/s52.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />
-                        <View style={{ marginLeft: 10, flex: 1 }}>
+                        <TouchableOpacity onPress={() => this.RBSheet3.open()} style={{ marginLeft: 10, flex: 1 }}>
                             <Text style={[style.b18, { color: theme.txt }]}>I Feel It Coming</Text>
                             <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>The Weeknd, Daft Punk</Text>
-                        </View>
+                        </TouchableOpacity>
                         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                             <Avatar.Image source={require('../../assets/image/Play.png')} size={32} style={{ backgroundColor: theme.bg }} />
                             <Icons name='dots-vertical' size={20} color={theme.txt} style={{ marginLeft: 8 }} />

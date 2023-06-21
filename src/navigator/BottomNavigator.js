@@ -1,5 +1,5 @@
-import React,{useContext,useState} from 'react';
-import {StyleSheet,Text,View} from 'react-native';
+import React,{useContext,useState,useRef,useEffect} from 'react';
+import {StyleSheet,Text,View,} from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from "react-native-vector-icons/Ionicons"
 import { Colors } from '../theme/color';
@@ -10,6 +10,7 @@ import Home from '../screens/Home';
 import Favorites from '../screens/Favorites';
 import Playlist from '../screens/Playlist';
 import Setting from '../screens/Setting';
+import Animated, { FadeInUp, FadeOutDown, Layout } from 'react-native-reanimated';
 
 const Tab = createBottomTabNavigator();
 
@@ -19,16 +20,25 @@ export default function MyTabs() {
   const [darkMode,setDarkMode] = useState('false')
 
   return (
+  //   <Animated.View
+  //     entering={FadeInUp}
+  //     exiting={FadeOutDown}
+  //     layout={Layout.duration(100)}
+  //     style={{
+  //       height:80,
+  //     }}
+  // >
+    
     <Tab.Navigator
     screenOptions={{
-      // BottomTabBarHeight:30,
-      tabBarStyle: { position: 'absolute',height:70,paddingBottom:10,paddingTop:10,backgroundColor:theme.bottom},
+      tabBarStyle: { position: 'absolute',height:70,paddingBottom:10,paddingTop:10,backgroundColor:theme.bottom,},
       tabBarLabelStyle: {
         fontSize: 15,
       },
       tabBarShowLabel:false,
-    }}>
-    
+    }}
+    >
+   
     <Tab.Screen name="Home" component={Home} 
     options={{
       tabBarShowLabel:true,
@@ -40,8 +50,11 @@ export default function MyTabs() {
         color={focused ? Colors.primary : Colors.disable} />
       },
       headerShown:false,
+      // animationTypeForReplace: 'push',
+      //  animation:'slide_from_bottom'
     }}
     />
+    
   
     <Tab.Screen name="Favorites" component={Favorites}
      options={{
@@ -83,6 +96,7 @@ export default function MyTabs() {
     }} />
 
   </Tab.Navigator>
+  // </Animated.View>
   );
 }
 

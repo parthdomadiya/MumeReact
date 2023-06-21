@@ -127,10 +127,10 @@ export default function Songs() {
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                     <Image source={require('../../assets/image/s15.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />
-                    <View style={{ marginLeft: 10, flex: 1 }}>
+                    <TouchableOpacity onPress={() => this.RBSheet1.open()} style={{ marginLeft: 10, flex: 1 }}>
                         <Text style={[style.b18, { color: theme.txt }]}>Disaster</Text>
                         <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>Conan Gray  |  03:50 mins</Text>
-                    </View>
+                    </TouchableOpacity>
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                         <Avatar.Image source={require('../../assets/image/Play.png')} size={32} style={{ backgroundColor: theme.bg }} />
                         <Icons name='dots-vertical' size={20} color={theme.txt} style={{ marginLeft: 8 }} />
@@ -138,10 +138,10 @@ export default function Songs() {
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                     <Image source={require('../../assets/image/s13.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />
-                    <View style={{ marginLeft: 10, flex: 1 }}>
+                    <TouchableOpacity onPress={() => this.RBSheet1.open()} style={{ marginLeft: 10, flex: 1 }}>
                         <Text style={[style.b18, { color: theme.txt }]}>HANDSOME</Text>
                         <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>Warren Hue  |  04:45 mins</Text>
-                    </View>
+                    </TouchableOpacity>
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                         <Avatar.Image source={require('../../assets/image/Play.png')} size={32} style={{ backgroundColor: theme.bg }} />
                         <Icons name='dots-vertical' size={20} color={theme.txt} style={{ marginLeft: 8 }} />
@@ -149,10 +149,10 @@ export default function Songs() {
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                     <Image source={require('../../assets/image/s12.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />
-                    <View style={{ marginLeft: 10, flex: 1 }}>
+                    <TouchableOpacity onPress={() => this.RBSheet1.open()} style={{ marginLeft: 10, flex: 1 }}>
                         <Text style={[style.b18, { color: theme.txt }]}>Sharks</Text>
                         <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>Imagine Dragons  |  05:23 mins</Text>
-                    </View>
+                    </TouchableOpacity>
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                         <Avatar.Image source={require('../../assets/image/Play.png')} size={32} style={{ backgroundColor: theme.bg }} />
                         <Icons name='dots-vertical' size={20} color={theme.txt} style={{ marginLeft: 8 }} />
@@ -160,10 +160,10 @@ export default function Songs() {
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                     <Image source={require('../../assets/image/s16.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />
-                    <View style={{ marginLeft: 10, flex: 1 }}>
+                    <TouchableOpacity onPress={() => this.RBSheet1.open()} style={{ marginLeft: 10, flex: 1 }}>
                         <Text style={[style.b18, { color: theme.txt }]}>Fly Me To The Sun</Text>
                         <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>Romantic Echoes  |  04:20 mins</Text>
-                    </View>
+                    </TouchableOpacity>
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                         <Avatar.Image source={require('../../assets/image/Play.png')} size={32} style={{ backgroundColor: theme.bg }} />
                         <Icons name='dots-vertical' size={20} color={theme.txt} style={{ marginLeft: 8 }} />
@@ -171,10 +171,10 @@ export default function Songs() {
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                     <Image source={require('../../assets/image/s17.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />
-                    <View style={{ marginLeft: 10, flex: 1 }}>
+                    <TouchableOpacity onPress={() => this.RBSheet1.open()} style={{ marginLeft: 10, flex: 1 }}>
                         <Text style={[style.b18, { color: theme.txt }]}>The Bended Man</Text>
                         <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>Sunwich  |  03:48 mins</Text>
-                    </View>
+                    </TouchableOpacity>
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                         <Avatar.Image source={require('../../assets/image/Play.png')} size={32} style={{ backgroundColor: theme.bg }} />
                         <Icons name='dots-vertical' size={20} color={theme.txt} style={{ marginLeft: 8 }} />
@@ -182,10 +182,10 @@ export default function Songs() {
                 </View>
                 <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15, marginBottom: 20 }}>
                     <Image source={require('../../assets/image/s18.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />
-                    <View style={{ marginLeft: 10, flex: 1 }}>
+                    <TouchableOpacity onPress={() => this.RBSheet1.open()} style={{ marginLeft: 10, flex: 1 }}>
                         <Text style={[style.b18, { color: theme.txt }]}>Somebody’s Nobody</Text>
                         <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>Alexander 23  |  03:57 mins</Text>
-                    </View>
+                    </TouchableOpacity>
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                         <Avatar.Image source={require('../../assets/image/Play.png')} size={32} style={{ backgroundColor: theme.bg }} />
                         <Icons name='dots-vertical' size={20} color={theme.txt} style={{ marginLeft: 8 }} />

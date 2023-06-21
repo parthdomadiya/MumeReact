@@ -28,14 +28,11 @@ const Top = () => {
 
     return <Tab.Navigator
         screenOptions={{
-            tabBarStyle: { flexDirection: 'row', },
+            tabBarStyle: { flexDirection: 'row',  backgroundColor: theme.bg,},
             tabBarLabelStyle: {
                 fontSize: 18,
-                backgroundColor: theme.bg,
-                // paddingVertical: 5,
-                marginHorizontal: 20,
-                
-            },
+                 marginHorizontal: 20,
+           },
             tabBarShowLabel: true,
             tabBarScrollEnabled: true,
             tabBarIndicatorStyle: { backgroundColor: Colors.primary },

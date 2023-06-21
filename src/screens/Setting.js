@@ -94,16 +94,9 @@ export default function Setting() {
                             <AppBar
                                 color={theme.bg}
                                 title='Share App'
-                                titleStyle={{ color: theme.txt, fontFamily: 'PlusJakartaSans-Bold' }}
+                                titleStyle={{ color: theme.txt, fontFamily: 'Urbanist-Bold' }}
                                 centerTitle={true}
                                 elevation={0}
-                                // leading={<TouchableOpacity onPress={() => this.RBSheet.close()}>
-                                //     <Avatar.Icon icon="close"
-                                //         style={{ backgroundColor: theme.icon, }}
-                                //         color={theme.txt} size={40}
-                                //     />
-                                // </TouchableOpacity>
-                                // }
                             />
                             
                             <View style={[style.divider,{backgroundColor:theme.border,marginVertical:10}]}></View>
@@ -248,7 +241,7 @@ export default function Setting() {
                                 </TouchableOpacity>
                                 <View style={{margin:5}}></View>
                                 <TouchableOpacity
-                                    onPress={()=>{ this.RBSheet5.close(),navigation.navigate('Login')}}
+                                    onPress={()=>{ this.RBSheet5.close(),navigation.navigate('MyTabs')}}
                                     style={[style.btn,{flex:1}]}>
                                     <Text style={[style.btntxt, { color: Colors.secondary}]}>Yes, Quit</Text>
                                 </TouchableOpacity>

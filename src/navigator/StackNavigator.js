@@ -75,7 +75,10 @@ export default function StackNavigator() {
                     <Stack.Screen
                         name="MyTabs"
                         component={MyTabs}
-                        options={{ headerShown: false }} />
+                        options={{ headerShown: false ,
+                        // animationTypeForReplace: 'push',
+                        // animation:'slide_from_bottom'
+                        }} />
                     <Stack.Screen
                         name="Home"
                         component={Home}
@@ -131,7 +134,7 @@ export default function StackNavigator() {
                     <Stack.Screen
                         name="Favorites"
                         component={Favorites}
-                        options={{ headerShown: false }} />
+                        options={{ headerShown: false ,}} />
                     <Stack.Screen
                         name="SearchResult"
                         component={SearchResult}

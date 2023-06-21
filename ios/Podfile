@@ -18,12 +18,12 @@ flipper_config = ENV['NO_FLIPPER'] == "1" ? FlipperConfiguration.disabled : Flip
 linkage = ENV['USE_FRAMEWORKS']
 if linkage != nil
   Pod::UI.puts "Configuring Pod with #{linkage}ally linked Frameworks".green
-  use_frameworks! :linkage => linkage.to_sym
+  # use_frameworks! :linkage => linkage.to_sym
 end
 
 target 'Mume' do
   config = use_native_modules!
-
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
   # Flags change depending on the env values.
   flags = get_default_flags()
 
