@@ -33,11 +33,13 @@ const Top = () => {
                 fontSize: 18,
                 backgroundColor: theme.bg,
                 // paddingVertical: 5,
-                marginHorizontal: 20
+                marginHorizontal: 20,
+                
             },
             tabBarShowLabel: true,
             tabBarScrollEnabled: true,
-            tabBarIndicatorStyle: { backgroundColor: Colors.primary }
+            tabBarIndicatorStyle: { backgroundColor: Colors.primary },
+            swipeEnabled:false
         }}>
 
         <Tab.Screen name="Suggested" component={Suggest}
@@ -124,9 +126,9 @@ export default function Home() {
                     color={theme.bg}
                     elevation={0}
                     title='Mume'
-                    style={{marginTop:20}}
+                    style={{marginTop:15}}
                     titleStyle={[style.apptitle, { color: theme.txt }]}
-                    leading={<Image source={require('../../assets/image/Logo2.png')} style={{ height: height / 20, width: width / 12, resizeMode: 'stretch', }} />}
+                    leading={<Image source={require('../../assets/image/Logo2.png')} style={{ height: height / 24, width: width / 12, resizeMode: 'stretch', }} />}
                     trailing={<Icon name="search-outline" color={theme.txt} size={30} />} />
                 <Top></Top>
             </View>

@@ -4,6 +4,6 @@ export const Colors={
     secondary:'#FFFFFF',
     bg:'#FF821610',
     // border:'#FFFFFF16',
-    // disable1:'#1F3C51',
+    disable:'#9E9E9E',
     
 }

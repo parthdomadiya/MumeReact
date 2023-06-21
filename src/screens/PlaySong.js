@@ -24,7 +24,7 @@ export default function PlaySong() {
                     color={theme.bg}
                     elevation={0}
                     style={{}}
-                    leading={<TouchableOpacity onPress={() => navigation.navigate('MyTabs3')}>
+                    leading={<TouchableOpacity onPress={() => navigation.navigate('MyTabs')}>
                         <Icon name="arrow-back" color={theme.txt} size={30} />
                     </TouchableOpacity>
                     }

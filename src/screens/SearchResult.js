@@ -39,16 +39,13 @@ export default function SearchResult() {
                 <AppBar
                     color={theme.bg}
                     elevation={0}
-                    style={{}}
-                    title={<View style={[style.txtinput, { flexDirection: 'row', alignItems: 'center', borderColor: theme.input, backgroundColor: theme.input }]}>
+                    style={{marginTop:10}}
+                    title={<View style={[style.txtinput, { height:45,flexDirection: 'row', alignItems: 'center', borderColor: theme.input, backgroundColor: theme.input }]}>
                         <Icon name='search-outline' color={theme.icon} size={20} />
-                        <TextInput placeholder='Firework'
-                            selectionColor={Colors.primary}
-                            placeholderTextColor={theme.disable}
-                            style={[style.m14, { color: theme.txt, flex: 1 }]} />
+                        <Text style={[style.s14, { color: theme.txt ,flex:1,marginLeft:10}]}>Firework</Text>
                         <Icon name='close' color={theme.icon} size={20} />
                     </View>}
-                    leading={<TouchableOpacity onPress={() => navigation.navigate('MyTabs3')}>
+                    leading={<TouchableOpacity onPress={() => navigation.navigate('RecentPlay')}>
                         <Icon name="arrow-back" color={theme.txt} size={30} />
                     </TouchableOpacity>
                     }

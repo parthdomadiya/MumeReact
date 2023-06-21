@@ -15,16 +15,18 @@ const theme = {
         input: '#F5F5F5',
         input2: '#FAFAFA',
         input3: '#FAFAFA',
+        bottom: '#FFFFFF',
 
         s: '#FF8216',
         // g:require('../../assets/image/g.png'),
         bar: require('../../assets/image/bar.png'),
         bar1: require('../../assets/image/bar1.png'),
+        master: require('../../assets/image/master.png'),
     },
     dark: {
         theme: 'dark',
         bg: '#181A20',
-        bg2: '#1F222A',
+        bg2: '#35383F',
         bg3: '#1F222A',
         txt: '#FFFFFF',
         txt2: '#E0E0E0',
@@ -37,11 +39,13 @@ const theme = {
         input: '#1F222A',
         input2: '#181A20',
         input3: '#1F222A',
+        bottom: '#181A20',
 
         s: '#FFFFFF',
         // g:require('../../assets/image/gd.png'),
         bar: require('../../assets/image/bard.png'),
         bar1: require('../../assets/image/bar1d.png'),
+        master: require('../../assets/image/masterd.png'),
     },
 
 };

@@ -19,7 +19,7 @@ export default function Artist() {
     const navigation = useNavigation();
     return (
         <SafeAreaView style={[style.area, { backgroundColor: theme.bg, }]}>
-            <ScrollView showsVerticalScrollIndicator={false}>
+            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{height:Platform.OS === 'ios' ? height : height/1.07}}>
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 20 }}>
                     <Text style={[style.subtitle, { color: theme.txt, }]}>85 artists</Text>
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -49,8 +49,11 @@ export default function Artist() {
                                         <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                                             <Avatar.Image source={require('../../assets/image/s8.png')} size={70} style={{ backgroundColor: theme.bg }} />
                                             <View style={{ marginLeft: 10, flex: 1 }}>
+                                                <TouchableOpacity onPress={() => { this.RBSheet2.close(), navigation.navigate('ArtistDetail') }}>
                                                 <Text style={[style.b18, { color: theme.txt }]}>The Weeknd</Text>
                                                 <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>1 Album  |  20 Songs</Text>
+                                                </TouchableOpacity>
+                                                
                                             </View>
                                         </View>
                                         <View style={[style.divider, { backgroundColor: theme.border, marginTop: 15 }]}></View>

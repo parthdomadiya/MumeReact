@@ -25,12 +25,12 @@ export default function Favorites() {
                     color={theme.bg}
                     elevation={0}
                     title='Mume'
-                    style={{ marginTop: 20 }}
+                    style={{ marginTop: 15 }}
                     titleStyle={[style.apptitle, { color: theme.txt }]}
-                    leading={<Image source={require('../../assets/image/Logo2.png')} style={{ height: height / 20, width: width / 12, resizeMode: 'stretch', }} />}
+                    leading={<Image source={require('../../assets/image/Logo2.png')} style={{ height: height / 24, width: width / 12, resizeMode: 'stretch', }} />}
                     trailing={<Icon name="search-outline" color={theme.txt} size={30} />} />
                     
-                <ScrollView showsVerticalScrollIndicator={false} >
+                <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{height:Platform.OS === 'ios' ? height : height/1.05}}>
                     <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 20 }}>
                         <View style={{ flex: 1 }}>
                             <TouchableOpacity style={[style.btn, { flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }]}>

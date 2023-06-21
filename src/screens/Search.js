@@ -22,8 +22,8 @@ export default function Search() {
                 <AppBar
                     color={theme.bg}
                     elevation={0}
-                    style={{}}
-                    title={<View style={[style.txtinput, { flexDirection: 'row', alignItems: 'center', borderColor: isfocuse === 'Search ..' ? Colors.primary : Colors.border, backgroundColor: isfocuse === 'Search ..' ? Colors.bg : theme.bg }]}>
+                    style={{marginTop:10}}
+                    title={<View style={[style.txtinput, { height:45,flexDirection: 'row', alignItems: 'center', borderColor: isfocuse === 'Search ..' ? Colors.primary : theme.border, backgroundColor: isfocuse === 'Search ..' ? Colors.bg : theme.bg ,borderWidth:1}]}>
                         <Icon name='search-outline' color={isfocuse === 'Search ..' ? Colors.primary : theme.disable} size={20} />
                         <TextInput placeholder='Search ..'
                             selectionColor={Colors.primary}
@@ -32,7 +32,7 @@ export default function Search() {
                             placeholderTextColor={theme.disable}
                             style={[style.m14, { color: theme.txt, flex: 1 }]} />
                     </View>}
-                    leading={<TouchableOpacity onPress={() => navigation.navigate('MyTabs3')}>
+                    leading={<TouchableOpacity onPress={() => navigation.navigate('RecentPlay')}>
                         <Icon name="arrow-back" color={theme.txt} size={30} />
                     </TouchableOpacity>
                     }

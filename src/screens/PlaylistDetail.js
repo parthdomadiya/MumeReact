@@ -26,7 +26,7 @@ export default function PlaylistDetail() {
                     color={theme.bg}
                     elevation={0}
                     style={{}}
-                    leading={<TouchableOpacity onPress={() => navigation.navigate('MyTabs3')}>
+                    leading={<TouchableOpacity onPress={() => navigation.navigate('MyTabs')}>
                         <Icon name="arrow-back" color={theme.txt} size={30} />
                     </TouchableOpacity>
                     }
@@ -104,7 +104,7 @@ export default function PlaylistDetail() {
             <Modal transparent={true} visible={visible}>
                 <View style={{ flex: 1 }}>
                     <View style={{
-                        right: 45, height: 110, width: 160, backgroundColor: Colors.secondary, position: 'absolute', marginTop: 40, borderRadius: 15, 
+                        right: 45, height: 110, width: 160, backgroundColor:theme.bg3, position: 'absolute', marginTop: 40, borderRadius: 15, 
                         shadowColor: 'black',
                         shadowOffset: { width: 1, height: 1 },
                         shadowOpacity: 0.2, borderColor: 'black',
@@ -112,18 +112,18 @@ export default function PlaylistDetail() {
                     }}>
                         <TouchableOpacity onPress={() => setvisible(false)}
                             style={{ flex: 1, justifyContent: 'flex-end', marginHorizontal: 10 }}>
-                            <Icons name='close' size={20} color={Colors.active} />
+                            <Icons name='close' size={20} color={theme.txt} />
                         </TouchableOpacity>
                         <TouchableOpacity onPress={() => { setvisible(false) }}>
                             <View style={{ marginHorizontal: 10, flexDirection: 'row', marginTop: 10, alignItems: 'center' }}>
-                                <Icons name='pencil-outline' size={20} color={Colors.active} />
+                                <Icons name='pencil-outline' size={20} color={theme.txt} />
                                 <Text style={[style.s16, { color: theme.txt, marginLeft: 5 }]}>Edit Playlist Info</Text>
                             </View>
                         </TouchableOpacity>
                         <View style={[style.divider, { backgroundColor: theme.border, marginVertical: 10 }]}></View>
                         <TouchableOpacity onPress={() => { setvisible(false) }} >
                             <View style={{ marginHorizontal: 10, flexDirection: 'row', marginBottom: 10, alignItems: 'center' }}>
-                                <Icons name='delete-outline' size={20} color={Colors.active} />
+                                <Icons name='delete-outline' size={20} color={theme.txt} />
                                 <Text style={[style.s16, { color: theme.txt, marginLeft: 5 }]}>Delete Playlist</Text>
                             </View>
                         </TouchableOpacity>

@@ -17,9 +17,10 @@ const height = Dimensions.get('screen').height
 export default function Songs() {
     const theme = useContext(themeContext);
     const navigation = useNavigation();
+    const [s1, sets1] = useState(false)
     return (
         <SafeAreaView style={[style.area, { backgroundColor: theme.bg, }]}>
-            <ScrollView showsVerticalScrollIndicator={false}>
+            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ height: Platform.OS === 'ios' ? height : height / 1.05 }}>
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 20 }}>
                     <Text style={[style.subtitle, { color: theme.txt, }]}>560 songs</Text>
                     <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -49,8 +50,11 @@ export default function Songs() {
                                         <View style={{ flexDirection: 'row', alignItems: 'center', }}>
                                             <Image source={require('../../assets/image/s14.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />
                                             <View style={{ marginLeft: 10, flex: 1 }}>
-                                                <Text style={[style.b18, { color: theme.txt }]}>Starboy</Text>
-                                                <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>The Weeknd, Daf...  |  03:50 mins</Text>
+                                                <TouchableOpacity onPress={() => { this.RBSheet1.close(), navigation.navigate('PlaySong') }}>
+                                                    <Text style={[style.b18, { color: theme.txt }]}>Starboy</Text>
+                                                    <Text style={[style.m12, { color: theme.disable3, marginTop: 7 }]}>The Weeknd, Daf...  |  03:50 mins</Text>
+                                                </TouchableOpacity>
+
                                             </View>
                                             <Icon name='heart-outline' size={30} color={theme.txt} />
                                         </View>
@@ -113,7 +117,11 @@ export default function Songs() {
                         </TouchableOpacity>
                     </View>
                     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                        <Avatar.Image source={require('../../assets/image/Play.png')} size={32} style={{ backgroundColor: theme.bg }} />
+                        <TouchableOpacity onPress={() => sets1(!s1)}>
+                            {!s1 ?
+                                <Avatar.Image source={require('../../assets/image/Play.png')} size={32} style={{ backgroundColor: theme.bg }} /> :
+                                <Icon name='pause' size={32} color={Colors.primary} />}
+                        </TouchableOpacity>
                         <Icons name='dots-vertical' size={20} color={theme.txt} style={{ marginLeft: 8 }} />
                     </View>
                 </View>

@@ -18,7 +18,7 @@ export default function Suggest() {
     const navigation = useNavigation();
     return (
         <SafeAreaView style={[style.area, { backgroundColor: theme.bg, }]}>
-            <ScrollView showsVerticalScrollIndicator={false}>
+            <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{height:Platform.OS === 'ios' ? height : height/1.05}}>
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 20 }}>
                     <Text style={[style.subtitle, { color: theme.txt, }]}>Recently Played</Text>
                     <TouchableOpacity onPress={() => navigation.navigate('RecentPlay')}>

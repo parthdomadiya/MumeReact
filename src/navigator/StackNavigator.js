@@ -20,6 +20,16 @@ import Favorites from '../screens/Favorites';
 import Playlist from '../screens/Playlist';
 import PlaylistDetail from '../screens/PlaylistDetail';
 import Add from '../screens/Add';
+import Setting from '../screens/Setting';
+import Premium from '../screens/Premium';
+import PaymentMethod from '../screens/PaymentMethod';
+import PaymentMethod2 from '../screens/PaymentMethod2';
+import AddCard from '../screens/AddCard';
+import Review from '../screens/Review';
+import Notification from '../screens/Notification';
+import Language from '../screens/Language';
+import Helpcenter from '../screens/Helpcenter';
+import MyTabs from './BottomNavigator';
 
 const Stack = createNativeStackNavigator();
 
@@ -50,22 +60,62 @@ export default function StackNavigator() {
             <NavigationContainer theme={darkMode === true ? DarkTheme : DefaultTheme}>
                 <StatusBar backgroundColor={darkMode === true ? Colors.active : Colors.secondary} barStyle={darkMode === true ? 'light-content' : 'dark-content'} translucent={false} />
                 <Stack.Navigator>
-                    {/* {
+                    {
                         showSplashScreen ?
                             <Stack.Screen
                                 name="Splash"
                                 component={Splash}
                                 options={{ headerShown: false }} />
                             : null
-                    } */}
-                    {/* <Stack.Screen
+                    }
+                    <Stack.Screen
                         name="Introduction"
                         component={Introduction}
-                        options={{ headerShown: false }} /> */}
-                    {/* <Stack.Screen
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="MyTabs"
+                        component={MyTabs}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
                         name="Home"
                         component={Home}
-                        options={{ headerShown: false }} /> */}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="Setting"
+                        component={Setting}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="Premium"
+                        component={Premium}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="AddCard"
+                        component={AddCard}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="Review"
+                        component={Review}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="Notification"
+                        component={Notification}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="Language"
+                        component={Language}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="Helpcenter"
+                        component={Helpcenter}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="PaymentMethod"
+                        component={PaymentMethod}
+                        options={{ headerShown: false }} />
+                    <Stack.Screen
+                        name="PaymentMethod2"
+                        component={PaymentMethod2}
+                        options={{ headerShown: false }} />
                     <Stack.Screen
                         name="Playlist"
                         component={Playlist}

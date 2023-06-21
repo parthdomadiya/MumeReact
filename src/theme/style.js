@@ -173,7 +173,7 @@ export default StyleSheet.create({
         color: Colors.disable,
         height: 50,
         borderRadius: 15,
-        borderWidth: 1
+        // borderWidth: 1
     },
 
     radio: {

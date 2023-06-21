@@ -24,15 +24,15 @@ export default function Playlist() {
                     color={theme.bg}
                     elevation={0}
                     title='Playlists'
-                    style={{ marginTop: 20 }}
+                    style={{ marginTop: 15 }}
                     titleStyle={[style.apptitle, { color: theme.txt }]}
-                    leading={<TouchableOpacity onPress={() => navigation.navigate('MyTabs3')}>
+                    leading={<TouchableOpacity >
                         <Icon name="arrow-back" color={theme.txt} size={30} />
                     </TouchableOpacity>
                     }
                     trailing={<Icon name="search-outline" color={theme.txt} size={30} />} />
 
-                <ScrollView showsVerticalScrollIndicator={false}>
+                <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ height: Platform.OS === 'ios' ? height : height / 1.05 }}>
                     <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 15 }}>
                         <Text style={[style.subtitle, { color: theme.txt, }]}>14 playlists</Text>
                         <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center' }}>
@@ -42,7 +42,7 @@ export default function Playlist() {
                     </View>
                     <View style={[style.divider, { backgroundColor: theme.border, marginVertical: 15 }]}></View>
                     <View style={{ flexDirection: 'row', alignItems: 'center', }}>
-                        <TouchableOpacity onPress={() => this.RBSheet4.open()}>
+                        <TouchableOpacity onPress={() => this.RBSheet4.open()} style={{ flexDirection: 'row', alignItems: 'center', }}>
                             <RBSheet ref={ref => {
                                 this.RBSheet4 = ref;
                             }}
@@ -64,13 +64,15 @@ export default function Playlist() {
                                     <View style={[style.divider, { backgroundColor: theme.border, marginVertical: 15 }]}></View>
                                     <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 20 }}>
                                         <View style={{ flex: 1 }}>
-                                            <TouchableOpacity style={[style.btn, { backgroundColor: theme.bg2 }]}>
+                                            <TouchableOpacity onPress={()=> this.RBSheet4.close()}
+                                            style={[style.btn, { backgroundColor: theme.bg2 }]}>
                                                 <Text style={[style.btntxt, { color: theme.s }]}>Cancel</Text>
                                             </TouchableOpacity>
                                         </View>
                                         <View style={{ marginHorizontal: 5 }}></View>
                                         <View style={{ flex: 1 }}>
-                                            <TouchableOpacity style={[style.btn, {}]}>
+                                            <TouchableOpacity onPress={()=> this.RBSheet4.close()}
+                                            style={[style.btn, {}]}>
                                                 <Text style={[style.btntxt, {}]}>Create</Text>
                                             </TouchableOpacity>
                                         </View>
@@ -78,8 +80,8 @@ export default function Playlist() {
                                 </View>
                             </RBSheet>
                             <Avatar.Image source={require('../../assets/image/add.png')} size={70} style={{ backgroundColor: theme.bg }} />
+                            <Text style={[style.b18, { color: theme.txt,  marginLeft: 10 }]}>Add New Playlist</Text>
                         </TouchableOpacity>
-                        <Text style={[style.b18, { color: theme.txt, flex: 1, marginLeft: 10 }]}>Add New Playlist</Text>
                     </View>
                     <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
                         <Image source={require('../../assets/image/s53.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />

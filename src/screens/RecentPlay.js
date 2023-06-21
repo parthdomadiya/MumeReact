@@ -25,7 +25,7 @@ export default function RecentPlay() {
                     title='Recently Played'
                     style={{}}
                     titleStyle={[style.apptitle, { color: theme.txt }]}
-                    leading={<TouchableOpacity onPress={() => navigation.navigate('MyTabs3')}>
+                    leading={<TouchableOpacity onPress={() => navigation.navigate('MyTabs')}>
                         <Icon name="arrow-back" color={theme.txt} size={30} />
                     </TouchableOpacity>
                     }
@@ -33,7 +33,9 @@ export default function RecentPlay() {
                         <TouchableOpacity onPress={() => navigation.navigate('Search')}>
                         <Icon name="search-outline" color={theme.txt} size={30} />
                         </TouchableOpacity>
+                        <TouchableOpacity onPress={() => navigation.navigate('SearchResult')}>
                         <Icons name="dots-horizontal-circle-outline" color={theme.txt} size={30} />
+                        </TouchableOpacity>
                     </HStack>}
                 />
                 <ScrollView showsVerticalScrollIndicator={false} >
@@ -125,7 +127,7 @@ export default function RecentPlay() {
                             <Icons name='dots-vertical' size={20} color={theme.txt} style={{ marginLeft: 8 }} />
                         </View>
                     </View>
-                    <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 }}>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', marginTop: 15 ,marginBottom:20}}>
                         <Image source={require('../../assets/image/s44.png')} style={{ height: height / 11, width: width / 5, resizeMode: 'stretch', }} />
                         <View style={{ marginLeft: 10, flex: 1 }}>
                             <Text style={[style.b18, { color: theme.txt }]}>Fly Me To The Sun</Text>
